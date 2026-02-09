@@ -17,13 +17,19 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex gap-8">
-          {['Home', 'Product', 'Articles', 'Hevy Coach', 'About Us'].map((item) => (
+          {[
+            { label: 'Home', href: '/' },
+            { label: 'Product', href: '/#features' },
+            { label: 'Articles', href: '/#guides' },
+            { label: 'Hevy Coach', href: '/#reviews' },
+            { label: 'About Us', href: '/#faq' },
+          ].map((item) => (
             <Link 
-              key={item} 
-              href={`/${item.toLowerCase().replace(' ', '-')}`}
+              key={item.label} 
+              href={item.href}
               className="text-sm font-medium hover:text-brand-green transition-colors"
             >
-              {item}
+              {item.label}
             </Link>
           ))}
         </nav>

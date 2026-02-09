@@ -27,7 +27,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-brand-dark py-24 relative overflow-hidden">
+    <section id="faq" className="bg-brand-dark py-24 relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-brand-green/5 rounded-full blur-[120px] -z-10" />
 
       <div className="max-w-4xl mx-auto px-6">

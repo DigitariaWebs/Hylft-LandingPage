@@ -28,7 +28,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-24 overflow-hidden" style={{ background: 'linear-gradient(180deg, #1B1F24 0%, #272C33 30%, #272C33 70%, #1B1F24 100%)' }}>
+    <section id="features" className="py-24 overflow-hidden" style={{ background: 'linear-gradient(180deg, #1B1F24 0%, #272C33 30%, #272C33 70%, #1B1F24 100%)' }}>
       <div className="max-w-7xl mx-auto px-6 space-y-32">
         {features.map((feature, index) => (
           <div

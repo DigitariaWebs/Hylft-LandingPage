@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 const guides = [
   {
     title: "Programme Split 3 Jours – Le Guide Complet (2026)",
-    image: "/guide1.jpg", // Pense à ajouter des images dans /public
+    image: "/guide1.jpg", 
     category: "Entraînement",
     href: "#"
   },
@@ -43,7 +43,7 @@ const guides = [
 
 export default function Guides() {
   return (
-    <section className="bg-brand-dark py-24">
+    <section id="guides" className="bg-brand-dark py-24">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* En-tête de la section */}
@@ -67,10 +67,12 @@ export default function Guides() {
                 {/* Overlay pour assombrir un peu l'image et faire ressortir le texte */}
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors z-10" />
                 
-                {/* Image (Placeholder si tu n'as pas encore les fichiers) */}
-                <div className="w-full h-full bg-white/5 flex items-center justify-center text-brand-gray italic">
-                  [Image: {guide.title.split(' ')[0]}]
-                </div>
+                <Image
+                  src={guide.image}
+                  alt={guide.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
                 
                 {/* Badge de catégorie */}
                 <span className="absolute top-4 left-4 z-20 bg-brand-dark/80 backdrop-blur-md text-brand-green text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest border border-white/10">

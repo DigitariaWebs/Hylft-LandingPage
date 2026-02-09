@@ -48,7 +48,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section className="bg-brand-dark py-20 border-t border-white/5">
+    <section id="reviews" className="bg-brand-dark py-20 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* --- EN-TÊTE : NOTES GLOBALES --- */}
