@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-dark">
+    <section className="relative pt-24 pb-20 lg:pt-32 lg:pb-32 overflow-hidden" style={{ background: 'linear-gradient(180deg, #272C33 0%, #1B1F24 100%)' }}>
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         <div className="z-10 text-center lg:text-left">
@@ -54,7 +54,7 @@ export default function Hero() {
           
           <div className="relative w-full max-w-[400px]">
             <Image 
-              src="/phone.png" 
+              src="/phone3.png" 
               alt="HYLFT App"
               width={400}
               height={800}
